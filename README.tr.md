@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/images/logo.png" alt="Datumsmith logo" width="96">
+
 # Datumsmith
 
 **Kendi işini kontrol eden, kodlama ajanları için mekanik CAD becerisi.**
@@ -98,6 +100,11 @@ kapılardan geçmeden PASS demez, tasarım niyetini düzenlenebilir tutar.
 `--orient-search`, baskıda altı yönün her biri için sarkma alanını, enjeksiyonda her açılma ekseni için girinti
 alanını raporlar.
 
+<p align="center"><img src="docs/images/dfm-report.png" alt="FDM parçası ve enjeksiyon gövdesi için check_dfm çıktısı" width="760"></p>
+
+<details>
+<summary>Düz metin çıktısı</summary>
+
 ```text
 $ check_dfm.py sensor_cover.step --process fdm --fasteners
 check_dfm: FAIL
@@ -118,6 +125,8 @@ check_dfm: WARN
                  side action/lifter, which adds tooling cost.
 metrics.molding: projected_area_mm2 1200.0, undercut_by_pull_axis {Z: 44.7, Y: 2967.0, X: 2936.7}, best Z
 ```
+
+</details>
 
 Araç çıktıları, ajanların ve araçların ortak dili olduğu için İngilizcedir. Ajan sonuçları kullanıcının dilinde
 raporlar.
@@ -192,6 +201,8 @@ bırakılır. Rapor, isim uydurmak yerine bunları eksik olarak listeler.
 
 Datumsmith **[Agensi](https://www.agensi.io/r/SERDARVARAN?to=/skills/datumsmith-cad-that-proves-its-parts-cadquery-dfm-iso)** üzerinden tek seferlik satın alma ile satılır. Bu depo becerinin tanıtım sayfasıdır;
 becerinin kendisi burada dağıtılmaz.
+
+<p align="center"><a href="https://www.agensi.io/r/SERDARVARAN?to=/skills/datumsmith-cad-that-proves-its-parts-cadquery-dfm-iso"><img src="docs/images/cover.png" alt="Agensi'de Datumsmith" width="760"></a></p>
 
 1. [Datumsmith ilanını](https://www.agensi.io/r/SERDARVARAN?to=/skills/datumsmith-cad-that-proves-its-parts-cadquery-dfm-iso) açın ve satın alın.
 2. Ajanınızı Agensi'ye bir kez bağlayın (`https://mcp.agensi.io/mcp/auth`, oturum açma; API anahtarı gerekmez).

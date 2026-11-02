@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/images/logo.png" alt="Datumsmith logo" width="96">
+
 # Datumsmith
 
 **A mechanical CAD skill for coding agents that checks its own work.**
@@ -97,6 +99,11 @@ exists, never claim PASS without the gates, keep design intent editable.
 `--orient-search` reports the overhang area for all six print orientations, or the undercut area for each pull
 axis in moulding.
 
+<p align="center"><img src="docs/images/dfm-report.png" alt="check_dfm output for an FDM part and an injection-moulded housing" width="760"></p>
+
+<details>
+<summary>Plain-text output</summary>
+
 ```text
 $ check_dfm.py sensor_cover.step --process fdm --fasteners
 check_dfm: FAIL
@@ -117,6 +124,8 @@ check_dfm: WARN
                  side action/lifter, which adds tooling cost.
 metrics.molding: projected_area_mm2 1200.0, undercut_by_pull_axis {Z: 44.7, Y: 2967.0, X: 2936.7}, best Z
 ```
+
+</details>
 
 ### Design contracts and fit
 
@@ -188,6 +197,8 @@ them; the report lists them as missing instead of inventing names.
 
 Datumsmith is sold on **[Agensi](https://www.agensi.io/r/SERDARVARAN?to=/skills/datumsmith-cad-that-proves-its-parts-cadquery-dfm-iso)**
 as a one-time purchase. This repository is its public page: the skill itself is not distributed here.
+
+<p align="center"><a href="https://www.agensi.io/r/SERDARVARAN?to=/skills/datumsmith-cad-that-proves-its-parts-cadquery-dfm-iso"><img src="docs/images/cover.png" alt="Datumsmith on Agensi" width="760"></a></p>
 
 1. Open the [Datumsmith listing](https://www.agensi.io/r/SERDARVARAN?to=/skills/datumsmith-cad-that-proves-its-parts-cadquery-dfm-iso) and buy it.
 2. Connect your agent to Agensi once (`https://mcp.agensi.io/mcp/auth`, sign-in, no API key). Claude Code, Codex CLI,
